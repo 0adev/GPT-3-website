@@ -1,0 +1,128 @@
+.gpt3__header {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  padding-block: 10rem 5rem;
+}
+
+.gpt3__header-content {
+  display: grid;
+  place-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.gpt3__header-content h1 {
+  font-weight: 800;
+  font-size: clamp(2.5rem, 3.875vw, 3.875rem);
+  max-width: 20ch;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.gpt3__header-content p {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 1.75vw, 1.25rem);
+  color: var(--color-text);
+}
+
+.gpt3__header-content__input {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-auto-flow: column;
+}
+
+.gpt3__header-content__input input {
+  background-color: #052d56;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+  color: #fff;
+}
+
+.gpt3__header-content__input input::placeholder {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 400;
+  color: #3d6184;
+}
+
+.gpt3__header-content__input button {
+  background-color: #ff4820;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.gpt3__header-content__people {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.gpt3__header-content__people img {
+  max-width: 10rem;
+  width: 100%;
+}
+.gpt3__header-content__people p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.gpt3__header-image img {
+  max-width: 100%;
+  width: 767.41px;
+  max-height: 701.59px;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 64rem) /*1024px*/ {
+  .gpt3__header {
+    grid-template-columns: inherit;
+    grid-auto-flow: row;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 34.375rem) /*550px*/ {
+  .gpt3__header-content :where(h1, p) {
+    text-wrap: balance;
+  }
+
+  .gpt3__header-content__input {
+    display: grid;
+    grid-template-columns: inherit;
+    grid-auto-flow: row;
+    gap: 0.5rem;
+  }
+
+  .gpt3__header-content__input input,
+  .gpt3__header-content__input button {
+    padding: 1.25rem 1rem;
+    border-radius: 0;
+  }
+
+  .gpt3__header-content__input button {
+    padding-block: 1rem;
+  }
+
+  .gpt3__header-content__input input::placeholder {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 400;
+    color: #3d6184;
+  }
+}
+
+@media screen and (max-width: 27.5rem) /*440px*/ {
+  .gpt3__header-content__people {
+    flex-direction: column;
+    gap: 0.875rem;
+    align-items: start;
+  }
+}
