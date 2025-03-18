@@ -1,0 +1,56 @@
+.gpt3__brand {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "google slack atlassian dropbox shopify";
+  gap: 1.875rem;
+}
+
+#google {
+  grid-area: google;
+}
+#slack {
+  grid-area: slack;
+}
+#atlassian {
+  grid-area: atlassian;
+}
+#dropbox {
+  grid-area: dropbox;
+}
+#shopify {
+  grid-area: shopify;
+}
+
+.gpt3__brand > img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 8rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 64rem) {
+  .gpt3__brand {
+    margin-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 43.75rem) /*700px*/ {
+  .gpt3__brand {
+    grid-template-areas:
+      "google slack"
+      "atlassian dropbox"
+      "shopify _";
+  }
+}
+
+@media screen and (max-width: 26.25rem) /*460px*/ {
+  .gpt3__brand {
+    grid-template-areas:
+      "google"
+      "slack"
+      "atlassian"
+      "dropbox"
+      "shopify ";
+  }
+}
