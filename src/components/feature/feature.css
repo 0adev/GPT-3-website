@@ -1,17 +1,23 @@
-h1:has(img) {
+h3:has(img) {
   display: grid;
-  gap: 0.25rem;
+  place-content: start;
   font-family: var(--font-family);
   color: #fff;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 800;
 }
 
-h1:has(img) + p {
+h3:has(img) + p {
   color: var(--color-text);
   font-family: var(--font-family);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
   font-weight: 500;
   line-height: 1.5;
   text-wrap: balance;
+}
+
+@media screen and (max-width: 34.375rem) /*550px*/ {
+  h3:has(img) {
+    text-wrap: wrap;
+  }
 }

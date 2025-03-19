@@ -82,7 +82,7 @@
   text-wrap: balance;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) /*700px*/ {
   .gpt3__whatgpt-feature {
     display: grid;
     grid-template-columns: inherit;

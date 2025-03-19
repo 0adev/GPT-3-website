@@ -1,0 +1,45 @@
+.gpt3__features {
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  gap: 2rem;
+}
+
+.gpt3__features-heading {
+  display: grid;
+  place-content: start;
+  gap: 1.5rem;
+  font-family: var(--font-family);
+}
+
+.gpt3__features-heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2.125rem);
+  font-weight: 800;
+  text-wrap: balance;
+  max-width: 24ch;
+  width: 100%;
+}
+
+.gpt3__features-heading a {
+  color: var(--color-subtext);
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+  font-weight: 400;
+}
+
+.gpt3__features-container {
+  display: grid;
+  gap: 5rem;
+}
+
+.gpt3__features-container > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 64rem) /*1024px*/ {
+  .gpt3__features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+}

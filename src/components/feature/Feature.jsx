@@ -1,13 +1,14 @@
 import React from "react";
 import "./feature.css";
+import rectangle from "../../assets/feature-rectangle.png";
 
-const Feature = ({ rectangle, heading, paragraph }) => {
+const Feature = ({ heading, paragraph }) => {
   return (
     <>
-      <h1>
+      <h3>
         <img src={rectangle} />
         {heading}
-      </h1>
+      </h3>
       <p>{paragraph}</p>
     </>
   );

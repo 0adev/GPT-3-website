@@ -1,4 +1,7 @@
 /* @import url("./index.css"); */
+:target {
+  scroll-margin-top: 20ex;
+}
 
 *,
 *::before,
