@@ -13,7 +13,7 @@ function Menu() {
       </p>
 
       <p>
-        <a href="#gpt3">What is GPT?</a>
+        <a href="#whatgpt3">What is GPT?</a>
       </p>
 
       <p>
