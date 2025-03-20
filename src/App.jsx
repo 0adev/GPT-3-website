@@ -24,7 +24,6 @@ function App() {
         <WhatGPT3 />
         <Features />
         <Possibility />
-        <Possibility />
         <Blog />
         <Footer />
       </div>
