@@ -1,0 +1,68 @@
+.gpt3__blog {
+  display: grid;
+  gap: 5rem;
+}
+
+.gpt3__blog-heading {
+  font-family: var(--font-family);
+  font-size: clamp(2rem, 3.5vw, 3.857rem);
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: 18ch;
+  width: 100%;
+}
+
+.gpt3__blog-container {
+  display: grid;
+  grid-template-areas:
+    "blogOne blogTwo blogThree"
+    "blogOne blogFour blogFive";
+  gap: 3rem;
+}
+
+.gpt3__blog-container > * {
+  width: fit-content;
+  height: 100%;
+}
+
+/* utilities */
+.blog-one {
+  grid-area: blogOne;
+}
+.blog-two {
+  grid-area: blogTwo;
+}
+.blog-three {
+  grid-area: blogThree;
+}
+.blog-four {
+  grid-area: blogFour;
+}
+.blog-five {
+  grid-area: blogFive;
+}
+
+@media screen and (max-width: 50rem) {
+  .gpt3__blog-container {
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 41.125rem) {
+  .gpt3__blog-container {
+    grid-template-areas:
+      "blogOne blogTwo "
+      "blogThree blogFour"
+      "blogFive _";
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .gpt3__blog-container {
+    grid-template-areas:
+      "blogOne"
+      "blogTwo"
+      "blogThree"
+      "blogFour"
+      "blogFive ";
+  }
+}
