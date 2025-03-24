@@ -8,9 +8,9 @@ const Article = ({ image }) => {
       <div className="gpt3__article-content">
         <div className="gpt3__article-content_header">
           <h4 className="gpt3__article-subtitle">Sep 26, 2021</h4>
-          <h2 className="gpt3__article-title">
+          <p className="gpt3__article-title">
             GPT-3 and Open AI is the future. Let us explore how it is?
-          </h2>
+          </p>
         </div>
         <a href="|#blog">Read Full Article</a>
       </div>
