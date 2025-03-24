@@ -11,7 +11,7 @@ const Footer = () => {
         </h2>
         <button type="button">Request Early Access</button>
       </div>
-      <div className="gpt3__footer-container section__padding">
+      <div className="gpt3__footer-container">
         <div className="gpt3__footer-container_logo">
           <img src={logo} alt="gpt3 logo" />
           <p>Crechterwoord K12 182 DK Alknjkcb, All Rights Reserved</p>
